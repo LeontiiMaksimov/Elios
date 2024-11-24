@@ -1,0 +1,14 @@
+[features]
+seeds = false
+[programs.localnet]
+web3_solana = "8Et4TdRcRoiaiY5kQwk2px3dMkmRRDVTDPzwbT8wBjNv"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/robert/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
